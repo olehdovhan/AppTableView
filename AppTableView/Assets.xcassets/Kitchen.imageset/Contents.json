@@ -1,21 +1,18 @@
 {
   "images" : [
     {
-      "filename" : "Kitchen.jpg",
+      "filename" : "Kitchen.png",
       "idiom" : "universal",
-      "locale" : "SwiftBook",
       "scale" : "1x"
     },
     {
-      "filename" : "Kitchen@2x.jpg",
+      "filename" : "Kitchen@2x.png",
       "idiom" : "universal",
-      "locale" : "SwiftBook",
       "scale" : "2x"
     },
     {
-      "filename" : "Kitchen@3x.jpg",
+      "filename" : "Kitchen@3x.png",
       "idiom" : "universal",
-      "locale" : "SwiftBook",
       "scale" : "3x"
     }
   ],

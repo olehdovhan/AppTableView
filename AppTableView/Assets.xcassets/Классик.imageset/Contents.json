@@ -1,21 +1,16 @@
 {
   "images" : [
     {
-      "filename" : "Классик.jpg",
       "idiom" : "universal",
-      "locale" : "SwiftBook",
       "scale" : "1x"
     },
     {
-      "filename" : "Классик@2x.jpg",
       "idiom" : "universal",
-      "locale" : "SwiftBook",
       "scale" : "2x"
     },
     {
-      "filename" : "Классик@3x.jpg",
+      "filename" : "Классик@3x.png",
       "idiom" : "universal",
-      "locale" : "SwiftBook",
       "scale" : "3x"
     }
   ],

@@ -1,21 +1,18 @@
 {
   "images" : [
     {
-      "filename" : "Bonsai.jpg",
+      "filename" : "Bonsai.png",
       "idiom" : "universal",
-      "locale" : "SwiftBook",
       "scale" : "1x"
     },
     {
-      "filename" : "Bonsai@2x.jpg",
+      "filename" : "Bonsai@2x.png",
       "idiom" : "universal",
-      "locale" : "SwiftBook",
       "scale" : "2x"
     },
     {
-      "filename" : "Bonsai@3x.jpg",
+      "filename" : "Bonsai@3x.png",
       "idiom" : "universal",
-      "locale" : "SwiftBook",
       "scale" : "3x"
     }
   ],

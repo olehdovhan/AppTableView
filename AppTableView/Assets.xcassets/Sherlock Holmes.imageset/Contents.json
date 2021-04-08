@@ -1,21 +1,18 @@
 {
   "images" : [
     {
-      "filename" : "Sherlock Holmes.jpg",
+      "filename" : "Sherlock Holmes.png",
       "idiom" : "universal",
-      "locale" : "SwiftBook",
       "scale" : "1x"
     },
     {
-      "filename" : "Sherlock Holmes@2x.jpg",
+      "filename" : "Sherlock Holmes@2x.png",
       "idiom" : "universal",
-      "locale" : "SwiftBook",
       "scale" : "2x"
     },
     {
-      "filename" : "Sherlock Holmes@3x.jpg",
+      "filename" : "Sherlock Holmes@3x.png",
       "idiom" : "universal",
-      "locale" : "SwiftBook",
       "scale" : "3x"
     }
   ],

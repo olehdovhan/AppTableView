@@ -1,21 +1,18 @@
 {
   "images" : [
     {
-      "filename" : "Шок.jpg",
+      "filename" : "Шок.png",
       "idiom" : "universal",
-      "locale" : "SwiftBook",
       "scale" : "1x"
     },
     {
-      "filename" : "Шок@2x.jpg",
+      "filename" : "Шок@2x.png",
       "idiom" : "universal",
-      "locale" : "SwiftBook",
       "scale" : "2x"
     },
     {
-      "filename" : "Шок@3x.jpg",
+      "filename" : "Шок@3x.png",
       "idiom" : "universal",
-      "locale" : "SwiftBook",
       "scale" : "3x"
     }
   ],

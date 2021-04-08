@@ -1,12 +1,12 @@
 {
   "images" : [
     {
-      "filename" : "Speak Easy.png",
+      "filename" : "Классик.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "Speak Easy@2x.png",
+      "filename" : "Классик@2x.png",
       "idiom" : "universal",
       "scale" : "2x"
     },

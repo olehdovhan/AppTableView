@@ -1,21 +1,18 @@
 {
   "images" : [
     {
-      "filename" : "Morris Pub.jpg",
+      "filename" : "Morris Pub.png",
       "idiom" : "universal",
-      "locale" : "SwiftBook",
       "scale" : "1x"
     },
     {
-      "filename" : "Morris Pub@2x.jpg",
+      "filename" : "Morris Pub@2x.png",
       "idiom" : "universal",
-      "locale" : "SwiftBook",
       "scale" : "2x"
     },
     {
-      "filename" : "Morris Pub@3x.jpg",
+      "filename" : "Morris Pub@3x.png",
       "idiom" : "universal",
-      "locale" : "SwiftBook",
       "scale" : "3x"
     }
   ],

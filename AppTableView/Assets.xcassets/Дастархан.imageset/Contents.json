@@ -1,21 +1,18 @@
 {
   "images" : [
     {
-      "filename" : "Дастархан.jpg",
+      "filename" : "Дастархан.png",
       "idiom" : "universal",
-      "locale" : "SwiftBook",
       "scale" : "1x"
     },
     {
-      "filename" : "Дастархан@2x.jpg",
+      "filename" : "Дастархан@2x.png",
       "idiom" : "universal",
-      "locale" : "SwiftBook",
       "scale" : "2x"
     },
     {
-      "filename" : "Дастархан@3x.jpg",
+      "filename" : "Дастархан@3x.png",
       "idiom" : "universal",
-      "locale" : "SwiftBook",
       "scale" : "3x"
     }
   ],

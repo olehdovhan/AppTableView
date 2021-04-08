@@ -1,21 +1,18 @@
 {
   "images" : [
     {
-      "filename" : "Love&Life.jpg",
+      "filename" : "Love&Life.png",
       "idiom" : "universal",
-      "locale" : "SwiftBook",
       "scale" : "1x"
     },
     {
-      "filename" : "Love&Life@2x.jpg",
+      "filename" : "Love&Life@2x.png",
       "idiom" : "universal",
-      "locale" : "SwiftBook",
       "scale" : "2x"
     },
     {
-      "filename" : "Love&Life@3x.jpg",
+      "filename" : "Love&Life@3x.png",
       "idiom" : "universal",
-      "locale" : "SwiftBook",
       "scale" : "3x"
     }
   ],

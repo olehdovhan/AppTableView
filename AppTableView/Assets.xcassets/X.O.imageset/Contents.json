@@ -1,21 +1,18 @@
 {
   "images" : [
     {
-      "filename" : "X.O.jpg",
+      "filename" : "X.O.png",
       "idiom" : "universal",
-      "locale" : "SwiftBook",
       "scale" : "1x"
     },
     {
-      "filename" : "X.O@2x.jpg",
+      "filename" : "X.O@2x.png",
       "idiom" : "universal",
-      "locale" : "SwiftBook",
       "scale" : "2x"
     },
     {
-      "filename" : "X.O@3x.jpg",
+      "filename" : "X.O@3x.png",
       "idiom" : "universal",
-      "locale" : "SwiftBook",
       "scale" : "3x"
     }
   ],
