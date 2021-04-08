@@ -9,7 +9,12 @@ import UIKit
 
 class MainViewController: UITableViewController {
     
-    let restarauntNames = ["Kitaika", "Saperavi", "Queen", "McDonalds", "KFC", "ArtCoffee", "The Burger", "MisterCat", "Evrasia", "Hookah Bar", "Fifty"]
+    let restarauntNames = [
+        "Burger Heroes", "Kitchen", "Bonsai", "Дастархан",
+        "Индокитай", "X.O", "Балкан Гриль", "Sherlock Holmes",
+        "Speak Easy", "Morris Pub", "Вкусные истории",
+        "Классик", "Love&Life", "Шок", "Бочка"
+    ]
     
 
     override func viewDidLoad() {
@@ -28,6 +33,7 @@ class MainViewController: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
 
         cell.textLabel?.text = restarauntNames[indexPath.row]
+        cell.imageView?.image = UIImage(named: restarauntNames[indexPath.row])
 
         return cell
     }
@@ -41,6 +47,6 @@ class MainViewController: UITableViewController {
         // Get the new view controller using segue.destination.
         // Pass the selected object to the new view controller.
     }
-    */
+   
 
 }
