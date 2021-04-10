@@ -9,12 +9,10 @@ import UIKit
 
 class MainViewController: UITableViewController {
     
-    let restaurantNames = ["Burger Heroes", "Kitchen", "Bonsai", "Дастархан",
-        "Индокитай", "X.O", "Балкан Гриль", "Sherlock Holmes",
-        "Speak Easy", "Morris Pub", "Вкусные истории",
-        "Классик", "Love&Life", "Шок", "Бочка"
-    ]
 
+
+    let place = Place.getPlaces()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -24,7 +22,7 @@ class MainViewController: UITableViewController {
     // MARK: - Table view data source
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return restaurantNames.count
+        return place.count
     }
     
 
@@ -32,8 +30,11 @@ class MainViewController: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! CustomTableViewCell
         
 
-        cell.nameLabel.text = restaurantNames[indexPath.row]
-        cell.imageOfPlace.image = UIImage(named: restaurantNames[indexPath.row])
+        cell.nameLabel.text = place[indexPath.row].name
+        cell.locationLabel.text = place[indexPath.row].location
+        cell.typeLabel.text = place[indexPath.row].type
+    
+        cell.imageOfPlace.image = UIImage(named: place[indexPath.row].image)
         cell.imageOfPlace.layer.cornerRadius = cell.imageOfPlace.frame.size.height / 2
         cell.imageOfPlace.clipsToBounds = true
 
@@ -42,7 +43,5 @@ class MainViewController: UITableViewController {
     
     // MARK: - Table view delegate
     
-    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 85
-    }
+  
 }
