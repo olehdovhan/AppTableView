@@ -11,7 +11,7 @@ class MainViewController: UITableViewController {
     
 
 
-    let place = Place.getPlaces()
+    var place = Place.getPlaces()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,12 +29,18 @@ class MainViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! CustomTableViewCell
         
-
-        cell.nameLabel.text = place[indexPath.row].name
-        cell.locationLabel.text = place[indexPath.row].location
-        cell.typeLabel.text = place[indexPath.row].type
+        let places = place[indexPath.row]
+        cell.nameLabel.text = places.name
+        cell.locationLabel.text = places.location
+        cell.typeLabel.text = places.type
+        
+        if places.image == nil {
+            cell.imageOfPlace.image = UIImage(named: places.restaurantImage!)
+        } else {
+            cell.imageOfPlace.image = places.image
+        }
     
-        cell.imageOfPlace.image = UIImage(named: place[indexPath.row].image)
+       
         cell.imageOfPlace.layer.cornerRadius = cell.imageOfPlace.frame.size.height / 2
         cell.imageOfPlace.clipsToBounds = true
 
@@ -44,7 +50,15 @@ class MainViewController: UITableViewController {
     // MARK: - Table view delegate
     
   
-    @IBAction func cancelAction(_ segue: UIStoryboardSegue)  {}
+    @IBAction func unwindSegue(_ segue: UIStoryboardSegue)  {
     
+    guard let newPlaceVC = segue.source as? NewPlaceViewController else { return }
+        
+        newPlaceVC.saveNewPlace()
+        place.append(newPlaceVC.newPlace!)
+        tableView.reloadData()
     
+        
+    
+}
 }
