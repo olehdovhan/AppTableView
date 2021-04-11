@@ -8,34 +8,22 @@
 import UIKit
 
 class NewPlaceViewController: UITableViewController {
-    
     var newPlace: Place?
     var imageIsChanged = false
-    
     @IBOutlet weak var saveButton: UIBarButtonItem!
-    
     @IBOutlet weak var placeName: UITextField!
-    
     @IBOutlet weak var placeLocation: UITextField!
-    
     @IBOutlet weak var placeType: UITextField!
-    
     @IBOutlet weak var placeImage: UIImageView!
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         saveButton.isEnabled = false
-        
-        
         tableView.tableFooterView = UIView()
-        
         placeName.addTarget(self, action: #selector(textFieldChanged), for: .editingChanged)
     }
-    
     // Mark:  Table View Delegate
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         if indexPath.row == 0 {
-            
             let cameraIcon = #imageLiteral(resourceName: "camera")
             let photoIcon = #imageLiteral(resourceName: "photo (1)")
             let actionSheet = UIAlertController(title: nil, message: nil, preferredStyle: .actionSheet)
@@ -47,61 +35,43 @@ class NewPlaceViewController: UITableViewController {
             let photo = UIAlertAction(title: "Photo", style: .default) { _ in
                 self.chooseImagePicker(source: .photoLibrary)
             }
-            
             photo.setValue(photoIcon, forKey: "image")
             photo.setValue(CATextLayerAlignmentMode.left, forKey: "titleTextAlignment")
-            
-            
             
             let cancel = UIAlertAction(title: "Cancel", style: .cancel)
             actionSheet.addAction(camera)
             actionSheet.addAction(photo)
             actionSheet.addAction(cancel)
-            
-            present(actionSheet, animated: true) 
+            present(actionSheet, animated: true)
+        } 
+    }
+    func saveNewPlace() {
+        
+        var image: UIImage?
+        
+        if imageIsChanged {
+            image = placeImage.image
         } else {
-            view.endEditing(true)
+            image = #imageLiteral(resourceName: "imagePlaceholder")
         }
+        
+        newPlace = Place(name: placeName.text!,
+                         location: placeLocation.text,
+                         type: placeType.text,
+                         image: image,
+                         restaurantImage: nil)
     }
-
-func saveNewPlace() {
-    
-    var image: UIImage?
-    
-    if imageIsChanged {
-        image = placeImage.image
-    } else {
-        image = #imageLiteral(resourceName: "imagePlaceholder")
+    @IBAction func cancelAction(_ sender: Any) {
+        dismiss(animated: true)
     }
-
-    newPlace = Place(name: placeName.text!,
-                     location: placeLocation.text,
-                     type: placeType.text,
-                     image: image,
-                     restaurantImage: nil)
-    
 }
-
-
-
-@IBAction func cancelAction(_ sender: Any) {
-    
-    dismiss(animated: true)
-}
-
-}
-
 // Mark: Text field delegate
 extension NewPlaceViewController: UITextFieldDelegate {
-    
     // Cкрываем клавиатуру по нажатию на done
-    
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         textField.resignFirstResponder()
-        
         return true
     }
-    
     @objc private func textFieldChanged () {
         if placeName.text?.isEmpty == false {
             saveButton.isEnabled = true }
@@ -109,15 +79,10 @@ extension NewPlaceViewController: UITextFieldDelegate {
             saveButton.isEnabled = false
         }
     }
-    
 }
-
 // Mark: Work with image
-
 extension NewPlaceViewController: UIImagePickerControllerDelegate, UINavigationControllerDelegate {
-    
     func chooseImagePicker(source: UIImagePickerController.SourceType) {
-        
         if UIImagePickerController.isSourceTypeAvailable(source) {
             let imagePicker = UIImagePickerController()
             imagePicker.delegate = self
@@ -126,14 +91,11 @@ extension NewPlaceViewController: UIImagePickerControllerDelegate, UINavigationC
             present(imagePicker, animated: true)
         }
     }
-    
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
         placeImage.image = info[.editedImage] as? UIImage
         placeImage.contentMode = .scaleAspectFill
         placeImage.clipsToBounds = true
-        
         imageIsChanged = true
-        
         dismiss(animated: true)
     }
 }
