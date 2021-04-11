@@ -3,25 +3,28 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		0CB1EC632621A1DD00DFD40C /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CB1EC622621A1DD00DFD40C /* CustomTableViewCell.swift */; };
 		0CB1EC662621A66D00DFD40C /* PlaceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CB1EC652621A66D00DFD40C /* PlaceModel.swift */; };
 		0CB1EC692621BCF700DFD40C /* NewPlaceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CB1EC682621BCF700DFD40C /* NewPlaceViewController.swift */; };
+		0CB1EC8E2622F88700DFD40C /* StorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CB1EC8D2622F88700DFD40C /* StorageManager.swift */; };
 		0CC13181261F125500E1BC7B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CC13180261F125500E1BC7B /* AppDelegate.swift */; };
 		0CC13183261F125500E1BC7B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CC13182261F125500E1BC7B /* SceneDelegate.swift */; };
 		0CC13188261F125500E1BC7B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0CC13186261F125500E1BC7B /* Main.storyboard */; };
 		0CC1318A261F125600E1BC7B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0CC13189261F125600E1BC7B /* Assets.xcassets */; };
 		0CC1318D261F125600E1BC7B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0CC1318B261F125600E1BC7B /* LaunchScreen.storyboard */; };
 		0CC13198261F29A700E1BC7B /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CC13197261F29A700E1BC7B /* MainViewController.swift */; };
+		C31AC84F28D10F92E6D557E3 /* Pods_AppTableView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE8B6616ED90AC614666B6B9 /* Pods_AppTableView.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0CB1EC622621A1DD00DFD40C /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
 		0CB1EC652621A66D00DFD40C /* PlaceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceModel.swift; sourceTree = "<group>"; };
 		0CB1EC682621BCF700DFD40C /* NewPlaceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewPlaceViewController.swift; sourceTree = "<group>"; };
+		0CB1EC8D2622F88700DFD40C /* StorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageManager.swift; sourceTree = "<group>"; };
 		0CC1317D261F125500E1BC7B /* AppTableView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppTableView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0CC13180261F125500E1BC7B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0CC13182261F125500E1BC7B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -30,6 +33,9 @@
 		0CC1318C261F125600E1BC7B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0CC1318E261F125600E1BC7B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0CC13197261F29A700E1BC7B /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		AE8B6616ED90AC614666B6B9 /* Pods_AppTableView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AppTableView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E0943CD1A26E850789149623 /* Pods-AppTableView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppTableView.release.xcconfig"; path = "Target Support Files/Pods-AppTableView/Pods-AppTableView.release.xcconfig"; sourceTree = "<group>"; };
+		E6E1B9AEE7AC97893F2AECE7 /* Pods-AppTableView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppTableView.debug.xcconfig"; path = "Target Support Files/Pods-AppTableView/Pods-AppTableView.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +43,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C31AC84F28D10F92E6D557E3 /* Pods_AppTableView.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -48,6 +55,8 @@
 			children = (
 				0CC1317F261F125500E1BC7B /* AppTableView */,
 				0CC1317E261F125500E1BC7B /* Products */,
+				9ACBAEC4C0A7AEB1D0683BE3 /* Pods */,
+				8DDEF1BBF3024D05205DB705 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -66,6 +75,7 @@
 				0CC13182261F125500E1BC7B /* SceneDelegate.swift */,
 				0CC13197261F29A700E1BC7B /* MainViewController.swift */,
 				0CB1EC652621A66D00DFD40C /* PlaceModel.swift */,
+				0CB1EC8D2622F88700DFD40C /* StorageManager.swift */,
 				0CB1EC622621A1DD00DFD40C /* CustomTableViewCell.swift */,
 				0CB1EC682621BCF700DFD40C /* NewPlaceViewController.swift */,
 				0CC13186261F125500E1BC7B /* Main.storyboard */,
@@ -76,6 +86,23 @@
 			path = AppTableView;
 			sourceTree = "<group>";
 		};
+		8DDEF1BBF3024D05205DB705 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AE8B6616ED90AC614666B6B9 /* Pods_AppTableView.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9ACBAEC4C0A7AEB1D0683BE3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E6E1B9AEE7AC97893F2AECE7 /* Pods-AppTableView.debug.xcconfig */,
+				E0943CD1A26E850789149623 /* Pods-AppTableView.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -83,9 +110,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0CC13191261F125600E1BC7B /* Build configuration list for PBXNativeTarget "AppTableView" */;
 			buildPhases = (
+				BFD9252F759827AF3A90FC89 /* [CP] Check Pods Manifest.lock */,
 				0CC13179261F125500E1BC7B /* Sources */,
 				0CC1317A261F125500E1BC7B /* Frameworks */,
 				0CC1317B261F125500E1BC7B /* Resources */,
+				E74ABAF4D4F113D392A13617 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -141,6 +170,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		BFD9252F759827AF3A90FC89 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AppTableView-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E74ABAF4D4F113D392A13617 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AppTableView/Pods-AppTableView-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AppTableView/Pods-AppTableView-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AppTableView/Pods-AppTableView-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		0CC13179261F125500E1BC7B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -149,6 +220,7 @@
 				0CC13198261F29A700E1BC7B /* MainViewController.swift in Sources */,
 				0CB1EC692621BCF700DFD40C /* NewPlaceViewController.swift in Sources */,
 				0CC13181261F125500E1BC7B /* AppDelegate.swift in Sources */,
+				0CB1EC8E2622F88700DFD40C /* StorageManager.swift in Sources */,
 				0CB1EC662621A66D00DFD40C /* PlaceModel.swift in Sources */,
 				0CB1EC632621A1DD00DFD40C /* CustomTableViewCell.swift in Sources */,
 				0CC13183261F125500E1BC7B /* SceneDelegate.swift in Sources */,
@@ -295,11 +367,13 @@
 		};
 		0CC13192261F125600E1BC7B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E6E1B9AEE7AC97893F2AECE7 /* Pods-AppTableView.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = R53Z54YJ8K;
+				"EXCLUDED_ARCHS[sdk=*]" = arm64;
 				INFOPLIST_FILE = AppTableView/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -314,11 +388,13 @@
 		};
 		0CC13193261F125600E1BC7B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E0943CD1A26E850789149623 /* Pods-AppTableView.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = R53Z54YJ8K;
+				"EXCLUDED_ARCHS[sdk=*]" = arm64;
 				INFOPLIST_FILE = AppTableView/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
