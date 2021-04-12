@@ -200,6 +200,9 @@
                                     <segment title="Date"/>
                                     <segment title="Name"/>
                                 </segments>
+                                <connections>
+                                    <action selector="sortSelection:" destination="6KB-ja-Wgt" eventType="valueChanged" id="DnP-5w-ZwD"/>
+                                </connections>
                             </segmentedControl>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="85" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="9jZ-iX-igr">
                                 <rect key="frame" x="0.0" y="120" width="414" height="776"/>
@@ -282,7 +285,11 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="My Places" id="DZn-KK-KII">
-                        <barButtonItem key="leftBarButtonItem" title="Item" image="AZ" id="NBU-pq-4DV"/>
+                        <barButtonItem key="leftBarButtonItem" title="Item" image="AZ" id="NBU-pq-4DV">
+                            <connections>
+                                <action selector="reversedSorting:" destination="6KB-ja-Wgt" id="7tE-27-6qm"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="BuX-h4-qS3">
                             <connections>
                                 <segue destination="aYL-1s-Wnf" kind="presentation" id="wbt-gZ-99D"/>
@@ -290,6 +297,8 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="reversedSortingButton" destination="NBU-pq-4DV" id="DAg-L8-qoe"/>
+                        <outlet property="segmentedControl" destination="uTi-VY-YPt" id="vgx-y7-kNY"/>
                         <outlet property="tableView" destination="9jZ-iX-igr" id="iEG-cb-lwS"/>
                     </connections>
                 </viewController>
