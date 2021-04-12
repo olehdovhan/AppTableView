@@ -69,6 +69,7 @@
                                     <outlet property="locationLabel" destination="D7x-gY-ES9" id="sHf-3L-pE0"/>
                                     <outlet property="nameLabel" destination="BVM-QM-kQv" id="Nae-3f-Jee"/>
                                     <outlet property="typeLabel" destination="wG0-rd-I2V" id="xZt-Bn-Ncg"/>
+                                    <segue destination="anq-0Z-8Ue" kind="show" identifier="showDetail" id="eC2-66-z4K"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -94,7 +95,7 @@
             <objects>
                 <tableViewController id="anq-0Z-8Ue" customClass="NewPlaceViewController" customModule="AppTableView" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="IOH-fy-4n0">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <sections>
@@ -271,8 +272,8 @@
         <scene sceneID="TkO-E9-ecj">
             <objects>
                 <navigationController id="DE8-pY-ERZ" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="q4f-Ht-mlI">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="q4f-Ht-mlI">
+                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <textAttributes key="titleTextAttributes">
                             <fontDescription key="fontDescription" name="SnellRoundhand-Bold" family="Snell Roundhand" pointSize="24"/>
@@ -305,6 +306,9 @@
             <point key="canvasLocation" x="600" y="-626"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="eC2-66-z4K"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <image name="Photo" width="195" height="196"/>
         <systemColor name="opaqueSeparatorColor">
