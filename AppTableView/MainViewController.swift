@@ -5,10 +5,12 @@
 //  Created by Oleh Dovhan on 08.04.2021.
 //
 
-import UIKit
-import RealmSwift
 
-class MainViewController: UIViewController, UITableViewDataSource {
+
+import RealmSwift
+import UIKit
+
+class MainViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
    private let searchController = UISearchController(searchResultsController: nil)
    private var places: Results<Place>!
@@ -39,6 +41,11 @@ class MainViewController: UIViewController, UITableViewDataSource {
         definesPresentationContext = true
     }
     // MARK: - Table view data source
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+    }
+    
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         if isFiltering {
             return filteredPlaces.count
@@ -69,6 +76,8 @@ class MainViewController: UIViewController, UITableViewDataSource {
         return cell
     }
     // MARK: - Table view delegate
+    
+    
      func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
         let place = places[indexPath.row]
         let deleteAction = UIContextualAction(style: .destructive, title: "Delete") {  (contextualAction, view, boolValue) in
@@ -139,3 +148,4 @@ extension MainViewController: UISearchResultsUpdating {
     }
     
 }
+
