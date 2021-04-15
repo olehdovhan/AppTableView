@@ -203,6 +203,7 @@
                         <outlet property="placeLocation" destination="oMP-is-drj" id="q69-Gw-jFr"/>
                         <outlet property="placeName" destination="3hR-9K-arO" id="1ZG-y8-X6u"/>
                         <outlet property="placeType" destination="z1w-YL-GNW" id="kZk-Zw-87z"/>
+                        <outlet property="ratingControl" destination="Wi1-nd-lab" id="YRg-xm-9Y7"/>
                         <outlet property="saveButton" destination="2dy-xj-r91" id="43J-kz-rCF"/>
                     </connections>
                 </tableViewController>
