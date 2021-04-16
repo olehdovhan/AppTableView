@@ -31,9 +31,7 @@ import UIKit
         }
     }
     
-   
-  
-    // MARK initialization
+   // MARK initialization
     override init(frame: CGRect) {
         super.init(frame: frame)
         setupButtons()

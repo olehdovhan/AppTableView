@@ -12,6 +12,7 @@
 		0CB1EC692621BCF700DFD40C /* NewPlaceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CB1EC682621BCF700DFD40C /* NewPlaceViewController.swift */; };
 		0CB1EC8E2622F88700DFD40C /* StorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CB1EC8D2622F88700DFD40C /* StorageManager.swift */; };
 		0CB6B94626245815008A725A /* RatingControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CB6B94526245815008A725A /* RatingControl.swift */; };
+		0CB6B96F2629CC81008A725A /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CB6B96E2629CC81008A725A /* MapViewController.swift */; };
 		0CC13181261F125500E1BC7B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CC13180261F125500E1BC7B /* AppDelegate.swift */; };
 		0CC13183261F125500E1BC7B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CC13182261F125500E1BC7B /* SceneDelegate.swift */; };
 		0CC13188261F125500E1BC7B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0CC13186261F125500E1BC7B /* Main.storyboard */; };
@@ -27,6 +28,7 @@
 		0CB1EC682621BCF700DFD40C /* NewPlaceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewPlaceViewController.swift; sourceTree = "<group>"; };
 		0CB1EC8D2622F88700DFD40C /* StorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageManager.swift; sourceTree = "<group>"; };
 		0CB6B94526245815008A725A /* RatingControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingControl.swift; sourceTree = "<group>"; };
+		0CB6B96E2629CC81008A725A /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		0CC1317D261F125500E1BC7B /* AppTableView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppTableView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0CC13180261F125500E1BC7B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0CC13182261F125500E1BC7B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -82,6 +84,7 @@
 				0CB6B94526245815008A725A /* RatingControl.swift */,
 				0CB1EC682621BCF700DFD40C /* NewPlaceViewController.swift */,
 				0CC13186261F125500E1BC7B /* Main.storyboard */,
+				0CB6B96E2629CC81008A725A /* MapViewController.swift */,
 				0CC13189261F125600E1BC7B /* Assets.xcassets */,
 				0CC1318B261F125600E1BC7B /* LaunchScreen.storyboard */,
 				0CC1318E261F125600E1BC7B /* Info.plist */,
@@ -224,6 +227,7 @@
 				0CB1EC692621BCF700DFD40C /* NewPlaceViewController.swift in Sources */,
 				0CC13181261F125500E1BC7B /* AppDelegate.swift in Sources */,
 				0CB1EC8E2622F88700DFD40C /* StorageManager.swift in Sources */,
+				0CB6B96F2629CC81008A725A /* MapViewController.swift in Sources */,
 				0CB6B94626245815008A725A /* RatingControl.swift in Sources */,
 				0CB1EC662621A66D00DFD40C /* PlaceModel.swift in Sources */,
 				0CB1EC632621A1DD00DFD40C /* CustomTableViewCell.swift in Sources */,
