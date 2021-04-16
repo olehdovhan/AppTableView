@@ -259,6 +259,9 @@
                             <constraint firstAttribute="bottom" secondItem="QbO-uc-jmb" secondAttribute="bottom" id="rUH-sm-dIa"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="mapView" destination="QbO-uc-jmb" id="5bR-pf-hpd"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WUW-BU-3J4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
