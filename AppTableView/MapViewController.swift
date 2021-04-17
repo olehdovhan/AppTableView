@@ -14,7 +14,7 @@ class MapViewController: UIViewController {
     var place = Place()
     let annotationIdentifier = "annotationIdentifier"
     let locationManager = CLLocationManager() // даныый класс отвечает за настройку и управление служб геолокации
-
+    let regionInMeters = 500.00
     
     @IBOutlet var mapView: MKMapView!
     
@@ -30,6 +30,18 @@ class MapViewController: UIViewController {
         dismiss(animated: true)
     }
     
+    @IBAction func centerViewInUserLocation(_ sender: Any) {
+        
+        if let location = locationManager.location?.coordinate {
+            let region = MKCoordinateRegion(center: location,
+                                            latitudinalMeters: regionInMeters,
+                                            longitudinalMeters: regionInMeters)
+            mapView.setRegion(region, animated: true)
+        }
+        
+        
+        
+    }
     private func setupPlacemark() {
         
         guard let location = place.location else { return }
