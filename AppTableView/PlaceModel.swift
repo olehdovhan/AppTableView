@@ -25,6 +25,6 @@ class Place: Object {
         self.type = type
         self.imageData = imageData
         self.rating = rating
-    }
+    } 
     
 }

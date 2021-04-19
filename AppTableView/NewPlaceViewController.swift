@@ -100,6 +100,7 @@ class NewPlaceViewController: UITableViewController {
             
         }
     }
+    
     private func setupEditScreen() {
         if currentPlace != nil {
             setupNavigationBar()
@@ -135,7 +136,7 @@ class NewPlaceViewController: UITableViewController {
 }
 // Mark: Text field delegate
 extension NewPlaceViewController: UITextFieldDelegate {
-    // Cкрываем клавиатуру по нажатию на done
+    
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         textField.resignFirstResponder()
         return true

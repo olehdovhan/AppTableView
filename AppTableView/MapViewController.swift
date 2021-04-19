@@ -7,13 +7,13 @@
 
 import UIKit
 import MapKit
-import CoreLocation // для определения местоположения пользователя
+import CoreLocation
 
 class MapViewController: UIViewController {
     
     var place = Place()
     let annotationIdentifier = "annotationIdentifier"
-    let locationManager = CLLocationManager() // даныый класс отвечает за настройку и управление служб геолокации
+    let locationManager = CLLocationManager() 
     let regionInMeters = 500.00
     var incomeSegueIdentifier = ""
     
@@ -36,10 +36,12 @@ class MapViewController: UIViewController {
     }
     
     @IBAction func doneButtonPressed() {
+
     }
+
     @IBAction func centerViewInUserLocation(_ sender: Any) {
         showUserLocation()
-        }
+    }
     
     private func setupMapView() {
         if incomeSegueIdentifier == "showPlace" {
@@ -48,39 +50,35 @@ class MapViewController: UIViewController {
             addressLabel.isHidden = true
             doneButton.isHidden = true
         }
-        
     }
-    
+
     private func setupPlacemark() {
-        
+
         guard let location = place.location else { return }
-        
+
         let geocoder = CLGeocoder()
         geocoder.geocodeAddressString(location) { (placemarks, error) in
-            
+
             if let error = error {
                 print(error)
                 return
             }
-            
+
             guard let placemarks = placemarks else { return }
-            
             let placemark = placemarks.first
-            
+            guard let placemarkLocation = placemark?.location else { return }
+
             let annotation = MKPointAnnotation()
             annotation.title = self.place.name
             annotation.subtitle = self.place.type
-            
-            guard let placemarkLocation = placemark?.location else { return }
-            
             annotation.coordinate = placemarkLocation.coordinate
-            
+
             self.mapView.showAnnotations([annotation], animated: true)
             self.mapView.selectAnnotation(annotation, animated: true)
         }
     }
     private func checkLocationServices() {
-        
+
         if CLLocationManager.locationServicesEnabled() {
             setupLocationManager()
             checkLocationAuthorization()
@@ -103,14 +101,14 @@ class MapViewController: UIViewController {
             if incomeSegueIdentifier == "getAddress" { showUserLocation()}
             break
         case .denied:
-        // HOMEWork create alert controller
-        break
+            self.showAlert(title: "Location Services are Disabled",
+                           message: "To enable it go: Settings -> Privacy -> Location Services and turn On");        break
         case .notDetermined:
             locationManager.requestWhenInUseAuthorization()
         
         case .restricted:
-             // HOMEWork create alert controller
-        break
+            self.showAlert(title: "Location Services are Disabled",
+                           message: "To enable it go: Settings -> Privacy -> Location Services and turn On");        break
         case .authorizedAlways:
             break
       
@@ -158,12 +156,11 @@ extension MapViewController: MKMapViewDelegate {
         }
         return annotationView
     }
-    
 }
+
 extension MapViewController: CLLocationManagerDelegate {
     
     func locationManager(_ manager: CLLocationManager, didChangeAuthorization status: CLAuthorizationStatus) {
         checkLocationAuthorization()
     }
-    }
-
+}

@@ -50,11 +50,9 @@ import UIKit
         let selectedRating = index + 1
         
         if selectedRating == rating {
-            rating = 0
+            self.rating = 0
         } else {
-            rating = selectedRating
-            
-            
+            self.rating = selectedRating
         }
     }
     
@@ -122,6 +120,4 @@ import UIKit
             button.isSelected = index < rating
         }
     }
-    
-    
 }
