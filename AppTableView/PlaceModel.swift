@@ -18,6 +18,7 @@ class Place: Object {
     
     
     
+    
     convenience init(name: String, location: String?, type: String?, imageData: Data?, rating: Double) {
         self.init()
         self.name = name

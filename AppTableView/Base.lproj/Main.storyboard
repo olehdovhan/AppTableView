@@ -367,39 +367,44 @@
                                                     </constraints>
                                                 </imageView>
                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="Vpo-hM-PDx">
-                                                    <rect key="frame" x="96" y="8" width="302" height="69"/>
+                                                    <rect key="frame" x="96" y="8" width="54.5" height="69"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YaI-zG-yrX">
-                                                            <rect key="frame" x="0.0" y="0.0" width="302" height="25.5"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="54.5" height="25.5"/>
                                                             <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="18"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Location" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qdg-eO-Q2M">
-                                                            <rect key="frame" x="0.0" y="27.5" width="302" height="20.5"/>
+                                                            <rect key="frame" x="0.0" y="27.5" width="54.5" height="20.5"/>
                                                             <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="15"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Type" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5ZQ-aB-GHM">
-                                                            <rect key="frame" x="0.0" y="50" width="302" height="19"/>
+                                                            <rect key="frame" x="0.0" y="50" width="54.5" height="19"/>
                                                             <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="13"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                     </subviews>
                                                 </stackView>
+                                                <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dRc-OB-StI" customClass="RatingControlMainVC" customModule="AppTableView" customModuleProvider="target">
+                                                    <rect key="frame" x="174" y="0.0" width="240" height="85"/>
+                                                </stackView>
                                             </subviews>
                                             <constraints>
+                                                <constraint firstItem="dRc-OB-StI" firstAttribute="centerX" secondItem="WxR-dn-B1f" secondAttribute="centerX" constant="100" id="AAg-xJ-DKw"/>
                                                 <constraint firstItem="qMQ-g7-55w" firstAttribute="leading" secondItem="WxR-dn-B1f" secondAttribute="leading" constant="15" id="NeB-rs-8Uy"/>
                                                 <constraint firstAttribute="bottom" secondItem="Vpo-hM-PDx" secondAttribute="bottom" constant="8" id="Stu-Dg-Jp6"/>
+                                                <constraint firstItem="dRc-OB-StI" firstAttribute="centerY" secondItem="WxR-dn-B1f" secondAttribute="centerY" id="WxY-57-uKb"/>
                                                 <constraint firstItem="Vpo-hM-PDx" firstAttribute="top" secondItem="WxR-dn-B1f" secondAttribute="top" constant="8" id="eeu-gu-3AH"/>
                                                 <constraint firstItem="Vpo-hM-PDx" firstAttribute="leading" secondItem="qMQ-g7-55w" secondAttribute="trailing" constant="16" id="fmK-pB-WD3"/>
                                                 <constraint firstItem="qMQ-g7-55w" firstAttribute="centerY" secondItem="WxR-dn-B1f" secondAttribute="centerY" id="v3a-4G-o1S"/>
-                                                <constraint firstAttribute="trailing" secondItem="Vpo-hM-PDx" secondAttribute="trailing" constant="16" id="vtu-Kf-DYo"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
+                                            <outlet property="RCMain" destination="dRc-OB-StI" id="EvH-2N-RIw"/>
                                             <outlet property="imageOfPlace" destination="qMQ-g7-55w" id="lUO-kk-ZEy"/>
                                             <outlet property="locationLabel" destination="qdg-eO-Q2M" id="l96-RL-CXd"/>
                                             <outlet property="nameLabel" destination="YaI-zG-yrX" id="GAe-Rp-687"/>
@@ -488,7 +493,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="rbb-ka-nRs"/>
+        <segue reference="M9T-Yq-Mld"/>
         <segue reference="FpV-Bk-dVp"/>
     </inferredMetricsTieBreakers>
     <resources>

@@ -19,6 +19,7 @@
 		0CC1318A261F125600E1BC7B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0CC13189261F125600E1BC7B /* Assets.xcassets */; };
 		0CC1318D261F125600E1BC7B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0CC1318B261F125600E1BC7B /* LaunchScreen.storyboard */; };
 		0CC13198261F29A700E1BC7B /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CC13197261F29A700E1BC7B /* MainViewController.swift */; };
+		0CD5C7CF262DABEA00DD8431 /* RatingControlMainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD5C7CE262DABEA00DD8431 /* RatingControlMainVC.swift */; };
 		1C9328F6C3BCF9678930D2CA /* Pods_AppTableView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCCB0E79B4A64D1E0E3E7CBF /* Pods_AppTableView.framework */; };
 /* End PBXBuildFile section */
 
@@ -37,6 +38,7 @@
 		0CC1318C261F125600E1BC7B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0CC1318E261F125600E1BC7B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0CC13197261F29A700E1BC7B /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		0CD5C7CE262DABEA00DD8431 /* RatingControlMainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingControlMainVC.swift; sourceTree = "<group>"; };
 		BF17F82EE3FA2B1A92C8BE84 /* Pods-AppTableView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppTableView.release.xcconfig"; path = "Target Support Files/Pods-AppTableView/Pods-AppTableView.release.xcconfig"; sourceTree = "<group>"; };
 		D7932CCE8E0AE63A09E28263 /* Pods-AppTableView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppTableView.debug.xcconfig"; path = "Target Support Files/Pods-AppTableView/Pods-AppTableView.debug.xcconfig"; sourceTree = "<group>"; };
 		DCCB0E79B4A64D1E0E3E7CBF /* Pods_AppTableView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AppTableView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -82,6 +84,7 @@
 				0CB1EC8D2622F88700DFD40C /* StorageManager.swift */,
 				0CB1EC622621A1DD00DFD40C /* CustomTableViewCell.swift */,
 				0CB6B94526245815008A725A /* RatingControl.swift */,
+				0CD5C7CE262DABEA00DD8431 /* RatingControlMainVC.swift */,
 				0CB1EC682621BCF700DFD40C /* NewPlaceViewController.swift */,
 				0CC13186261F125500E1BC7B /* Main.storyboard */,
 				0CB6B96E2629CC81008A725A /* MapViewController.swift */,
@@ -225,6 +228,7 @@
 			files = (
 				0CC13198261F29A700E1BC7B /* MainViewController.swift in Sources */,
 				0CB1EC692621BCF700DFD40C /* NewPlaceViewController.swift in Sources */,
+				0CD5C7CF262DABEA00DD8431 /* RatingControlMainVC.swift in Sources */,
 				0CC13181261F125500E1BC7B /* AppDelegate.swift in Sources */,
 				0CB1EC8E2622F88700DFD40C /* StorageManager.swift in Sources */,
 				0CB6B96F2629CC81008A725A /* MapViewController.swift in Sources */,

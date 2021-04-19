@@ -116,6 +116,7 @@ class NewPlaceViewController: UITableViewController {
             ratingControl.rating = Int(currentPlace.rating)
             
             
+            
         }
     }
     

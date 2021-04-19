@@ -60,7 +60,7 @@ class MainViewController: UIViewController, UITableViewDataSource, UITableViewDe
         cell.nameLabel.text = place.name
         cell.locationLabel.text = place.location
         cell.typeLabel.text = place.type
-      
+        cell.RCMain.rating = Int(place.rating)
         cell.imageOfPlace.image = UIImage(data: place.imageData!)
         
         
