@@ -375,7 +375,7 @@
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Location" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qdg-eO-Q2M">
+                                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Location" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qdg-eO-Q2M">
                                                             <rect key="frame" x="0.0" y="27.5" width="54.5" height="20.5"/>
                                                             <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="15"/>
                                                             <nil key="textColor"/>
@@ -388,13 +388,17 @@
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                     </subviews>
+                                                    <constraints>
+                                                        <constraint firstItem="qdg-eO-Q2M" firstAttribute="width" secondItem="YaI-zG-yrX" secondAttribute="width" id="Qx6-Hz-bgv"/>
+                                                        <constraint firstAttribute="width" relation="lessThanOrEqual" constant="100" id="hHN-ZQ-Mpu"/>
+                                                    </constraints>
                                                 </stackView>
                                                 <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dRc-OB-StI" customClass="RatingControlMainVC" customModule="AppTableView" customModuleProvider="target">
                                                     <rect key="frame" x="174" y="0.0" width="240" height="85"/>
                                                 </stackView>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="dRc-OB-StI" firstAttribute="centerX" secondItem="WxR-dn-B1f" secondAttribute="centerX" constant="100" id="AAg-xJ-DKw"/>
+                                                <constraint firstItem="dRc-OB-StI" firstAttribute="centerX" relation="lessThanOrEqual" secondItem="WxR-dn-B1f" secondAttribute="centerX" constant="80" id="AAg-xJ-DKw"/>
                                                 <constraint firstItem="qMQ-g7-55w" firstAttribute="leading" secondItem="WxR-dn-B1f" secondAttribute="leading" constant="15" id="NeB-rs-8Uy"/>
                                                 <constraint firstAttribute="bottom" secondItem="Vpo-hM-PDx" secondAttribute="bottom" constant="8" id="Stu-Dg-Jp6"/>
                                                 <constraint firstItem="dRc-OB-StI" firstAttribute="centerY" secondItem="WxR-dn-B1f" secondAttribute="centerY" id="WxY-57-uKb"/>

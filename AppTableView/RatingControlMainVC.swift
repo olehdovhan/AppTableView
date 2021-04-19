@@ -24,7 +24,7 @@ class RatingControlMainVC: UIStackView {
     
     private var ratingButtons = [UIButton]()
     
-    @IBInspectable var starSize: CGSize = CGSize(width: 30.0, height: 30.0) {
+    @IBInspectable var starSize: CGSize = CGSize(width: 14.0, height: 14.0) {
         didSet {
             setupButtons()
         }
