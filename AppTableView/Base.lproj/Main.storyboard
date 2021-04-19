@@ -297,6 +297,17 @@
                                     <action selector="doneButtonPressed" destination="aJt-Ir-dN9" eventType="touchUpInside" id="kny-13-6bC"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v6d-St-UC7">
+                                <rect key="frame" x="182" y="718" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="2rs-2l-Mdd"/>
+                                    <constraint firstAttribute="width" constant="50" id="Afv-bW-654"/>
+                                </constraints>
+                                <state key="normal" image="GetDirection"/>
+                                <connections>
+                                    <action selector="goButtonPressed" destination="aJt-Ir-dN9" eventType="touchUpInside" id="HLq-1m-8K6"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="8Tb-lf-FNj"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -307,9 +318,11 @@
                             <constraint firstItem="hyd-cL-paa" firstAttribute="centerX" secondItem="Jma-Uq-CrC" secondAttribute="centerX" id="A09-ve-nSB"/>
                             <constraint firstItem="8Tb-lf-FNj" firstAttribute="trailing" secondItem="jGN-Z6-JqN" secondAttribute="trailing" constant="40" id="Eya-cn-ZEs"/>
                             <constraint firstItem="QbO-uc-jmb" firstAttribute="top" secondItem="Ur8-f7-RR5" secondAttribute="bottom" constant="-196" id="Hff-pQ-GOe"/>
+                            <constraint firstItem="v6d-St-UC7" firstAttribute="centerX" secondItem="Jma-Uq-CrC" secondAttribute="centerX" id="V1r-yf-yZ2"/>
                             <constraint firstItem="8Tb-lf-FNj" firstAttribute="trailing" secondItem="VGg-G2-3sE" secondAttribute="trailing" constant="40" id="bab-cv-1YU"/>
                             <constraint firstItem="QbO-uc-jmb" firstAttribute="leading" secondItem="8Tb-lf-FNj" secondAttribute="leading" id="fgF-fY-Y6F"/>
                             <constraint firstItem="QbO-uc-jmb" firstAttribute="trailing" secondItem="8Tb-lf-FNj" secondAttribute="trailing" id="h2H-g1-g7F"/>
+                            <constraint firstItem="8Tb-lf-FNj" firstAttribute="bottom" secondItem="v6d-St-UC7" secondAttribute="bottom" constant="40" id="h5l-81-KPO"/>
                             <constraint firstItem="hyd-cL-paa" firstAttribute="centerY" secondItem="Jma-Uq-CrC" secondAttribute="centerY" constant="-20" id="heJ-du-fQr"/>
                             <constraint firstItem="jGN-Z6-JqN" firstAttribute="top" secondItem="8Tb-lf-FNj" secondAttribute="top" constant="40" id="iOB-NX-Vnd"/>
                             <constraint firstItem="8Tb-lf-FNj" firstAttribute="trailing" secondItem="Ur8-f7-RR5" secondAttribute="trailing" constant="20" id="jjc-jK-hzb"/>
@@ -321,6 +334,7 @@
                     <connections>
                         <outlet property="addressLabel" destination="Ur8-f7-RR5" id="qxI-CL-pos"/>
                         <outlet property="doneButton" destination="tPm-2H-BDm" id="qdY-eJ-wye"/>
+                        <outlet property="goButton" destination="v6d-St-UC7" id="2Un-aR-b0G"/>
                         <outlet property="mapPinImage" destination="hyd-cL-paa" id="N99-jH-gpb"/>
                         <outlet property="mapView" destination="QbO-uc-jmb" id="5bR-pf-hpd"/>
                     </connections>
@@ -502,6 +516,7 @@
     </inferredMetricsTieBreakers>
     <resources>
         <image name="AZ" width="25" height="24"/>
+        <image name="GetDirection" width="50" height="50"/>
         <image name="Photo" width="195" height="196"/>
         <image name="Pin" width="42" height="42"/>
         <image name="Placeholder" width="22" height="22"/>
